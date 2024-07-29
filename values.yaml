@@ -1,0 +1,10 @@
+image:
+  repository: localhost:5000/my-node-app
+  tag: latest
+ingress:
+  enabled: true
+  hosts:
+    - host: node-app.local
+      paths:
+        - path: /
+          pathType: Prefix
